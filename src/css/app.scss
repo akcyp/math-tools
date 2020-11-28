@@ -1,0 +1,48 @@
+// app global css in SCSS form
+$darkest  : #1f1f1f;
+$dark     : #191918;
+
+$orange   : #b55400;
+$white    : #eeeeee;
+
+.bg-darkest {
+  background-color: $darkest
+}
+
+.bg-dark {
+  background-color: $dark !important
+}
+
+.bg-orange {
+  background-color: $orange
+}
+
+.inline-code {
+  display: inline-block;
+  padding: 0.5em;
+  cursor: pointer;
+}
+.inline-code > code {
+  padding: 1em;
+}
+
+::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f1f1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 1em;
+}
+
+input[type="number"] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
