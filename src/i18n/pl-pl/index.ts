@@ -7,8 +7,7 @@ export default {
     header: 'Narzędzia',
     list: {
       mainPage: {
-        title: 'Strona główna',
-        subtitle: 'Spis narzędzi'
+        title: 'Strona główna'
       },
       storage: {
         title: 'Schowek',
@@ -70,8 +69,10 @@ export default {
   messages: {
     error: {
       invalidInputValue: 'Niepoprawna wartość "{value}"!',
+      saveFailded: 'Nie udało się zapisać!',
       copyFailed: 'Nie udało się skopiować do schowka!',
-      copyFailedNull: 'Nie możesz skopiować pustego resultatu',
+      saveFailedNull: 'Nie możesz skopiować pustego resultatu',
+      copyFailedNull: 'Nie możesz skopiować pustego resultatu'
     },
     success: {
       saved: 'Zapisano!',

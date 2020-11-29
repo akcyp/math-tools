@@ -37,7 +37,7 @@
           </q-item-section>
           <q-item-section>
             <q-item-label>{{ item.title }}</q-item-label>
-            <q-item-label caption lines="2" class="text-grey-4">{{ item.subtitle }}</q-item-label>
+            <q-item-label caption lines="2" class="text-grey-4" v-if="item.subtitle.length">{{ item.subtitle }}</q-item-label>
           </q-item-section>
         </q-item>
       </q-list>
@@ -63,10 +63,12 @@ export default class MainLayout extends Vue {
     { i18nPath: 'conversion', icon: 'transform', url: '/conversion' },
     { i18nPath: 'roman', icon: 'account_balance', url: '/roman' },
   ].map(({icon, url, i18nPath}, id) => {
+    const subtitleTranslationPath = `layout.list.${i18nPath}.subtitle`;
+    const subtitle = this.$t(subtitleTranslationPath)
     return {
       id,
       title: this.$t(`layout.list.${i18nPath}.title`),
-      subtitle: this.$t(`layout.list.${i18nPath}.subtitle`),
+      subtitle: subtitle === subtitleTranslationPath ? '' : subtitle,
       icon,
       url
     };

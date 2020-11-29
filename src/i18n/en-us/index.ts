@@ -7,8 +7,7 @@ export default {
     header: 'Tools',
     list: {
       mainPage: {
-        title: 'Main Page',
-        subtitle: 'Tool list'
+        title: 'Main Page'
       },
       storage: {
         title: 'Storage',
@@ -70,7 +69,9 @@ export default {
   messages: {
     error: {
       invalidInputValue: 'Invalid value "{value}"!',
+      saveFailded: 'Failed to save!',
       copyFailed: 'Failed to copy!',
+      saveFailedNull: 'Result is null',
       copyFailedNull: 'Result is null'
     },
     success: {
