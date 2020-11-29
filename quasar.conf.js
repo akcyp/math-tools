@@ -8,6 +8,7 @@
 /* eslint-env node */
 /* eslint-disable @typescript-eslint/no-var-requires */
 const { configure } = require('quasar/wrappers');
+const fs = require('fs');
 
 module.exports = configure(function (ctx) {
   return {
@@ -85,9 +86,14 @@ module.exports = configure(function (ctx) {
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
     devServer: {
-      https: false,
       port: 8080,
-      open: true // opens browser window automatically
+      open: true, // opens browser window automatically
+      // https: false,
+      https: {
+        key: fs.readFileSync('./certificates/localhost-key.pem'),
+        cert: fs.readFileSync('./certificates/localhost.pem'),
+        ca: fs.readFileSync('./certificates/localhost.pem')
+      }
     },
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-framework
