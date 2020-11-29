@@ -62,17 +62,13 @@ export default class MainLayout extends Vue {
     { i18nPath: 'prime', icon: 'code', url: '/prime' },
     { i18nPath: 'conversion', icon: 'transform', url: '/conversion' },
     { i18nPath: 'roman', icon: 'account_balance', url: '/roman' },
-  ].map(({icon, url, i18nPath}, id) => {
-    const subtitleTranslationPath = `layout.list.${i18nPath}.subtitle`;
-    const subtitle = this.$t(subtitleTranslationPath)
-    return {
-      id,
-      title: this.$t(`layout.list.${i18nPath}.title`),
-      subtitle: subtitle === subtitleTranslationPath ? '' : subtitle,
-      icon,
-      url
-    };
-  });
+  ].map(({icon, url, i18nPath}, id) => ({
+    id,
+    title: this.$t(`layout.list.${i18nPath}.title`),
+    subtitle: this.$t(`layout.list.${i18nPath}.subtitle`),
+    icon,
+    url
+  }));
   mounted() {
     // Read storage items from localStorage
     this.$store.dispatch('storage/init').catch(err => console.error(err));

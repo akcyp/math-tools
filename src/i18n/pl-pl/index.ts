@@ -7,7 +7,8 @@ export default {
     header: 'Narzędzia',
     list: {
       mainPage: {
-        title: 'Strona główna'
+        title: 'Strona główna',
+        subtitle: ''
       },
       storage: {
         title: 'Schowek',

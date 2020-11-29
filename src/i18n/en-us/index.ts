@@ -7,7 +7,8 @@ export default {
     header: 'Tools',
     list: {
       mainPage: {
-        title: 'Main Page'
+        title: 'Main page',
+        subtitle: ''
       },
       storage: {
         title: 'Storage',
