@@ -1,31 +1,65 @@
 # Math Tools (math-tools)
 
-Webpage for math students
+Webpage for math students, Progressive Web App (PWA) made with Quasar Framework!
 
-## Install the dependencies
+![Preview](preview.jpg)
+
+## Stack
+
+- Quasar Framework
+- Typescript
+- Vue (Class Based API)
+- Vuex
+- i18n
+- highlight.js
+- vue-clipboard2
+- vuedraggable
+
+## Pre-reqs
+
+- Install `yarn` [https://yarnpkg.com/](https://yarnpkg.com/)
+- Install `mkcert` [https://github.com/FiloSottile/mkcert](https://github.com/FiloSottile/mkcert) (only required for dev server)
+
+## Install
+
+### 1. Clone the repository
 
 ```bash
-yarn
+git clone https://github.com/akcyp/math-tools
+mkdir math-tools
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+### 2. Install dependencies
 
 ```bash
-quasar dev
+yarn global add @quasar/cli
+yarn install
 ```
 
-### Lint the files
+### 3a. Build and run pwa
 
 ```bash
-yarn run lint
+quasar build -m pwa
 ```
-
-### Build the app for production
 
 ```bash
-quasar build
+quasar serve --history --https dist/pwa
 ```
 
-### Customize the configuration
+### 3b. Run development server
 
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+- Install https certificates
+
+```bash
+mkdir certificates
+cd certificates
+mkcert -install
+mkcert localhost
+cd ..
+```
+
+- Run dev server
+
+```bash
+quasar dev -m pwa
+```
