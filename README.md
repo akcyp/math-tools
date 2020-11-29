@@ -1,8 +1,14 @@
 # Math Tools (math-tools)
 
-Webpage for math students, Progressive Web App (PWA) made with Quasar Framework!
+Webpage for math students, Progressive Web App (PWA) made with Quasar Framework! [https://akcyp.github.io/math-tools/](https://akcyp.github.io/math-tools/)
 
 ![Preview](preview.jpg)
+
+## Live demo
+
+[https://akcyp.github.io/math-tools/](https://akcyp.github.io/math-tools/)
+
+> Note: live demo vue-router runs on hash mode instead of history mode
 
 ## Stack
 
