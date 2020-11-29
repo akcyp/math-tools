@@ -1,5 +1,5 @@
 <template>
-  <q-page class="flex flex-center column justify-center bg-dark text-white" padding>
+  <q-page class="flex column bg-dark text-white" padding>
     <blockquote class="quote">
       <p>“{{ $t('mainPage.quote.content') }}”</p>
       <small>~ <cite>{{ $t('mainPage.quote.author') }}</cite></small>
