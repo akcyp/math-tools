@@ -70,7 +70,7 @@ export default {
   messages: {
     error: {
       invalidInputValue: 'Niepoprawna wartość "{value}"!',
-      saveFailded: 'Nie udało się zapisać!',
+      saveFailed: 'Nie udało się zapisać!',
       copyFailed: 'Nie udało się skopiować do schowka!',
       saveFailedNull: 'Nie możesz skopiować pustego resultatu',
       copyFailedNull: 'Nie możesz skopiować pustego resultatu'

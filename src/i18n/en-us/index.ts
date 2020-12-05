@@ -70,7 +70,7 @@ export default {
   messages: {
     error: {
       invalidInputValue: 'Invalid value "{value}"!',
-      saveFailded: 'Failed to save!',
+      saveFailed: 'Failed to save!',
       copyFailed: 'Failed to copy!',
       saveFailedNull: 'Result is null',
       copyFailedNull: 'Result is null'
