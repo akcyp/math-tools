@@ -53,7 +53,7 @@ module.exports = configure(function (ctx) {
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
       vueRouterMode: 'history', // available values: 'hash', 'history'
-
+      publicPath: '/math-tools/',
       // transpile: false,
 
       // Add dependencies for transpiling with Babel (Array of string/regex)
@@ -88,12 +88,6 @@ module.exports = configure(function (ctx) {
     devServer: {
       port: 8080,
       open: true, // opens browser window automatically
-      // https: false,
-      https: {
-        key: fs.readFileSync('./certificates/localhost-key.pem'),
-        cert: fs.readFileSync('./certificates/localhost.pem'),
-        ca: fs.readFileSync('./certificates/localhost.pem')
-      }
     },
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-framework
